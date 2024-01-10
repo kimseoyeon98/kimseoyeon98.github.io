@@ -29,3 +29,6 @@ nav {
 .container:nth-child(3){}
 .container:nth-child(4){}
 
+
+/* 임시, 추후 그리드로 바꾸든 %로 바꾸기 */
+.gridSystem {display: flex;}
