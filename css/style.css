@@ -15,6 +15,94 @@ nav {
     font-size: 30px;
 }
 
+h1, h2 {
+    font-family: 'DM Serif Text', serif;
+}
+
+h1 {
+    font-size: 180px;
+}
+h2 {
+    font-size: 150px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 150px;
+}
+h4 {
+    font-size: 70px;
+}
+
+
+
+/* 1 페이지. 메인 */
+
+
+
+/* 2 페이지. 소개 */
+.intro h2 {margin-top: 10%;}
+.intro p {
+    font-size: 70px;
+    font-weight: 300;
+    width: 80%;
+}
+
+
+/* 3 페이지. 경력사항 */
+.career article ul li {
+    font-size: 40px;
+    font-weight: 300;
+}
+.career article ul li b, .port p {
+    font-size: 40px;
+    font-weight: 400;
+}
+.career article ul li span {
+    font-weight: 400;
+    color: grey;
+    margin-right: 10px;
+}
+
+
+/* 4 페이지. 포트폴리오 */
+.port .portTop {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.port article ul {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.port article ul li {
+    background-color: lightgray;
+    width: 28vw;
+    height: 30vw;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* 5 컨텍트.  */
+.contect .emailSec {
+    
+}
+.contect .emailSec span {
+    font-size: 50px;
+    font-weight: 300;
+}
+.contect .contect_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contect p {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+/* 스콜 효과 */
 .wrap {
     position:relative;
     top:0;
@@ -28,7 +116,11 @@ nav {
 .container:nth-child(2){}
 .container:nth-child(3){}
 .container:nth-child(4){}
+.container:nth-child(5){}
 
 
 /* 임시, 추후 그리드로 바꾸든 %로 바꾸기 */
-.gridSystem {display: flex;}
+.gridSystem {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+}
