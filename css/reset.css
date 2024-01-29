@@ -3,10 +3,13 @@
 html {
     overflow-y: hidden;
 }
+* {
+    box-sizing: border-box;
+}
 body {
     margin: 0; 
     padding: 0; 
-    font-size: 70px;
+    font-size: 30px;
     color: #fff;
     height: 100%;
     font-family: 'DM Serif Text', serif;
@@ -50,7 +53,6 @@ button,input[type=button],input[type=submit]{
 input[type=text], input[type=password], input[type=submit], input[type=image], button {
     border-radius: 0;
     -webkit-appearance: none;
-    box-sizing: border-box;
 }
 textarea {
     border-radius: 0;
