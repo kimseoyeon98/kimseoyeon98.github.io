@@ -98,21 +98,45 @@ h4 {
     font-size: 2em;
     font-weight: 300;
     width: 85%;
+    padding-bottom: 3vh;
 }
 
 
 /* 3 페이지. 경력사항 */
+
+.career article {
+    display: inline-block;
+    width: 22%;
+    padding: 10px;
+    vertical-align: top;
+} 
+.career article:first-of-type {
+    width: 34%;
+}
+.career article ul {
+    margin-bottom: 30px;
+}
 .career article ul li {
     font-size: 40px;
     font-weight: 300;
+    margin-bottom: 5px;
+    color: grey;
 }
-.career article ul li b, .port p {
-    font-size: 40px;
+
+.career article div {
+    font-size: 150px;
+    font-weight: 300;
+}
+.career article div h3 {
+}
+
+.career article ul li b {
     font-weight: 400;
+    color: #fff;
 }
 .career article ul li span {
-    font-weight: 400;
-    color: grey;
+    font-weight: 500;
+    color: rgba(218, 52, 121, 1);
     margin-right: 10px;
 }
 
@@ -199,6 +223,9 @@ h4 {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+.contect .contect_grid div {
+    cursor: pointer;
+}
 .contect p {
     font-size: 50px;
     font-weight: 300;
@@ -223,8 +250,3 @@ h4 {
 .container:nth-child(5){}
 
 
-/* 임시, 추후 그리드로 바꾸든 %로 바꾸기 */
-.gridSystem {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25%, auto));
-}
