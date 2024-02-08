@@ -18,3 +18,5 @@ window.addEventListener('wheel',(e)=>{
     console.log(e.deltaY)
     wrap.style.top = page * -100 + 'vh';
 },{passive:false}); // 디폴트 기능 제거 - 스크롤
+
+

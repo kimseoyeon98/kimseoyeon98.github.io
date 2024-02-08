@@ -1,25 +1,68 @@
 /* PC (해상도 1024px)*/
-@media all and (min-width: 1024px) {
+:root {
+    /* 1rem = 100으로 할까? */
+    --font-size-px180: clamp(2.2857rem, 9.3750vw, 38.5714rem); /* 32 , 180 , 540 */
+    --font-size-px150: clamp(2rem, 7.8125vw, 32.1428rem); /* 28 , 150 , 450 */
+    --font-size-px100: clamp(1.4286rem, 5.2083vw, 21.4286rem); /* 20 , 100 , 300 */
+    --font-size-px070: clamp(1.2857rem, 3.6458vw, 15rem); /* 18 , 70 , 210 */
+    --font-size-px050: clamp(1.1428rem, 2.6042vw, 10.4143rem); /* 16 , 50 , 150 */
+    --font-size-px040: clamp(1.1428rem, 2.0833vw, 8.5714rem); /* 16 , 40 , 120 */
+    --font-size-px030: clamp(1rem, 1.5625vw, 6.4286rem); /* 14 , 30 , 90 */
+}
 
-    }
+@media all and (min-width: 1024px) {
+    .container {padding: 0 25px; height: 100vh;}
+}
 
 
 
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width: 768px) and (max-width: 1023px) {
+    .container {padding: 0 20px; height: 100vh;}
 
-    }
+
+}
 
 
 
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width: 767px) {
+    .container {padding: 0 15px; height: 100vh;}
+    h1 {display: block;}
+    .career {}
+        .career article:first-of-type {height: 25vh; padding-top: 50px;}
+        .career article {display: block; width: 100%; padding: 0; margin-bottom: 20px;}
+        .career article ul {margin-bottom: 10px;}
+        .career article ul li {display: inline-block; margin-right: 5px;}
+        .career article div {margin-bottom: 15px;}
+        .career article div h3 {display: inline-block;}
+    .port {}
+        .port article ul li {width: 48%; margin: 1%;}
+}
 
-    }
 
 
+/* 모바일, 그 외 (해상도 ~480px)*/
 @media all and (max-width: 480px) {
+    .container {padding: 0 15px; height: 100vh;}
+    .main {}
+        .main .smallTxt {display: none;}
+    .intro {}
+    .career {}
+
+    .port {}
+        .port article ul {
+            overflow-y: scroll;
+            width: auto;
+        }   
+        .port article ul li {
+            width: 100%;
+            height: 40vw;
+            display: block;
+            margin-bottom: 10px;
+        }
+    .contect {}
     
 }

@@ -9,7 +9,7 @@ html {
 body {
     margin: 0; 
     padding: 0; 
-    font-size: 30px;
+    font-size: 14px;
     color: #fff;
     height: 100%;
     font-family: 'DM Serif Text', serif;
@@ -21,9 +21,7 @@ html, h1, h2, h3, h4, h5, h6, form, fieldset, img, dl, dt, dd, p {
     padding: 0;
     border: 0;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-size: 1em
-}
+
 article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
     display: block
 }
