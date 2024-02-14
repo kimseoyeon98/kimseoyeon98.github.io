@@ -92,6 +92,19 @@ h4 {
         .bigTxt:hover {
             color: #fff;
         }
+    
+
+    /* 글자 흘러감 */
+    .moveTxt {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: slideLeft 10s infinite linear;
+    }
+    @keyframes slideLeft {
+        0% {-webkit-transform: translate3d(10%, 0, 0); transform: translate3d(40%, 0, 0);}
+        100% {-webkit-transform: translate3d(-100%, 0, 0); transform: translate3d(-100%, 0, 0);}
+    }
 
 
 
@@ -131,19 +144,20 @@ h4 {
     .career article:nth-of-type(2):hover, .career article:nth-of-type(3):hover, .career article:nth-of-type(4):hover {background-color: rgba(255, 255, 255, 0.1); cursor: pointer;}
 
         .career article ul {
-            margin-bottom: 30px;
             display: none;
         }
-        .displayBolck {display: block;}
+        .career article ul.show {display: block;}
             .career article ul li {
                 font-size: var(--font-size-px040);
                 font-weight: 300;
-                margin-bottom: 5px;
+                margin-bottom: 30px;
                 color: grey;
             }
                 .career article ul li b {
                     font-weight: 400;
                     color: #fff;
+                    display: block;
+                    margin-top: 5px;
                 }
                 .career article ul li span {
                     font-weight: 500;
@@ -152,6 +166,7 @@ h4 {
                     -webkit-background-clip: text;
                     margin-right: 10px;
                 }
+
 
 
 /* 4 페이지. 포트폴리오 */
@@ -183,6 +198,11 @@ h4 {
             cursor: pointer;
             margin-right: 30px;
         }
+            .port article ul li {
+                width: 30vw;
+                height: 28vw;
+                object-fit: cover;
+            }
 
     .blackCover {
         position: absolute;
@@ -192,7 +212,10 @@ h4 {
         height: 100%;
         background-color: rgba(0, 0, 0, 0.8);
         padding: 0px 20px;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
+    .blackCover:hover {opacity: 1;}
         .blackCover div {
             position: absolute;
             bottom: 20px;
