@@ -121,42 +121,50 @@
 
 			<article> <!-- 포폴 내용 : 가로 스크롤 방법 찾아보기 -->
 				<ul>
-					<li onclick="location.href=''">
-						<div>
-							<img src="" alt="project Photo">
-						</div>
-						<div class="blackCover">
+					<li>
+						<a href="" target="_blank">
 							<div>
-								<h4>Polasting</h4>
-								<span>2023.12 - 2024.02</span> <br>
-								<span>Party of 8 | Design Develop | Contribue 50% 20%</span>
-								<p>Explain about this project. Be alble to write up to two lines. Blahblahblah...</p>
+								<img src="" alt="project Photo">
 							</div>
-						</div>
-					</li><li onclick="location.href=''">
-						<div>
-							<img src="" alt="project Photo">
-						</div>
-						<div class="blackCover">
+							<div class="blackCover">
+								<div>
+									<h4>Polasting</h4>
+									<span>2023.12 - 2024.02</span> <br>
+									<span>Party of 8 | Design Develop | Contribue 50% 20%</span>
+									<p>Explain about this project. Be alble to write up to two lines. Blahblahblah...</p>
+								</div>
+							</div>
+						</a>
+						
+					</li><li>
+						<a href="" target="_blank">
 							<div>
-								<h4>Tea 100</h4>
-								<span>2023.01 - 2024.03</span> <br>
-								<span>Party of 5 | Design Develop | Contribue 100% 30%</span>
-								<p>Explain about this project. Be alble to write up to two lines. Blahblahblah...</p>
+								<img src="" alt="project Photo">
 							</div>
-						</div>
-					</li><li onclick="location.href=''">
-						<div>
-							<img src="" alt="project Photo">
-						</div>
-						<div class="blackCover">
+							<div class="blackCover">
+								<div>
+									<h4>Tea 100</h4>
+									<span>2023.01 - 2024.03</span> <br>
+									<span>Party of 5 | Design Develop | Contribue 100% 30%</span>
+									<p>Explain about this project. Be alble to write up to two lines. Blahblahblah...</p>
+								</div>
+							</div>
+						</a>
+					</li><li>
+						<a href="" target="_blank">
 							<div>
-								<h4>SWS</h4>
-								<span>2023.12 - 2024.02</span> <br>
-								<span>Party of 1 | Design Develop | Contribue 100%</span>
-								<p>Explain about this project. Be alble to write up to two lines. Blahblahblah...</p>
+								<img src="" alt="project Photo">
 							</div>
-						</div>
+							<div class="blackCover">
+								<div>
+									<h4>SWS</h4>
+									<span>2023.12 - 2024.02</span> <br>
+									<span>Party of 1 | Design Develop | Contribue 100%</span>
+									<p>Explain about this project. Be alble to write up to two lines. Blahblahblah...</p>
+								</div>
+							</div>
+						</a>
+						
 					</li>
 				</ul>
 			</article>
@@ -169,21 +177,30 @@
 				<h1>cat7570@naver.com</h1>
 			</article>
 			<article class="contect_grid">
-				<div onclick="location.href=''">
-					<h4>Notefolio</h4>
-					<p>You can see my detail portfolio in Korean</p>
+				<div>
+					<a href="https://notefolio.net/cat7570" target="_blank">
+						<h4>Notefolio</h4>
+						<p>You can see my detail portfolio in Korean</p>
+					</a>
+					
 				</div>
 				<div>
-					<h4>Behance</h4>
-					<p>You can see my detail portfolio in Korean</p>
+					<a href="https://www.behance.net/cat75705dba" target="_blank">
+						<h4>Behance</h4>
+						<p>You can see my detail portfolio in Korean</p>
+					</a>
 				</div>
 				<div>
-					<h4>Blog Tstory</h4>
-					<p>You can see my detail portfolio in Korean</p>
+					<a href="https://nmsy.tistory.com/" target="_blank">
+						<h4>Blog Tstory</h4>
+						<p>You can see my detail portfolio in Korean</p>
+					</a>
 				</div>
 				<div>
-					<h4>Git hub</h4>
-					<p>You can see my detail portfolio in Korean</p>
+					<a href="https://github.com/kimseoyeon98" target="_blank">
+						<h4>Git hub</h4>
+						<p>You can see my detail portfolio in Korean</p>
+					</a>
 				</div>
 			</article>
 		</section>
@@ -199,61 +216,3 @@
 
 
 </html>
-
-
-<!-- 
-	스와이퍼 사이트를 이용한 스크롤 (차선책)
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
-		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-				Slider main container
-	<div class="swiper">
-			Additional required wrapper
-		<div class="swiper-wrapper">
-			Slides
-		<div class="swiper-slide">Slide 1</div>
-		<div class="swiper-slide">Slide 2</div>
-		<div class="swiper-slide">Slide 3</div>
-
-		</div>
-		If we need pagination
-		<div class="swiper-pagination"></div>
-	
-
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-	
-
-		<div class="swiper-scrollbar"></div>
-	</div>
-
-<style>
-	.swiper {
-		width: 600px;
-		height: 300px;
-		}
-</style>
- <script>
-	const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
- </script>
- -->
