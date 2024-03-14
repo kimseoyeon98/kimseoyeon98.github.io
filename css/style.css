@@ -45,13 +45,20 @@ h4 {
 .main {}
 .main article:first-of-type {
     height: 65vh;
+    position: relative;
+}
+.main article:first-of-type .mainNameWrap {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
 }
     .main h1 {
         display: inline-block;
     }
     .main .myName {
         position: relative;
-        margin-left: 1%;
+        margin-left: 3%;
     }
     .main .gradation {
         width: 102%;
@@ -82,16 +89,34 @@ h4 {
             font-size: var(--font-size-px030);
             font-weight: 300;
             color: grey;
+            position: relative;
         }
+            .main .smallTxt.move01 {
+                left: 13%;
+            }
+            .main .smallTxt.move02 {
+                left: 0%;
+            }
+            .main .smallTxt.move03 {
+                left: 58%;
+            }
         .bigTxt {
             font-size: var(--font-size-px100);
             font-weight: 600;
             cursor: pointer;
             color: gray;
+            position: relative;
         }
         .bigTxt:hover {
             color: #fff;
         }
+            .main .bigTxt.move04 {
+                left: %;
+            }
+            .main .bigTxt.move05 {
+                left: 15%;
+            }
+
     
 
     /* 글자 흘러감 */
@@ -123,7 +148,7 @@ h4 {
 
 
 /* 3 페이지. 경력사항 */
-.career {}
+.career {display: flex;}
     .career article {
         display: inline-block;
         width: 22%;
@@ -131,6 +156,8 @@ h4 {
         padding: 10px;
         vertical-align: top;
     } 
+
+    .career article {display: flex; flex-direction: column; justify-content: space-between;}
     .career article:first-of-type {
         width: 34%;
     }
@@ -161,7 +188,7 @@ h4 {
                 }
                 .career article ul li span {
                     font-weight: 500;
-                    background: linear-gradient(180deg,rgba(218, 52, 121, 1), rgba(218, 52, 121, 1), rgba(129, 25, 187, 1), rgba(24, 24, 204, 1));
+                    background: linear-gradient(180deg,rgba(218, 52, 121, 1), rgba(218, 52, 121, 1), rgba(129, 25, 187, 1));
                     color: transparent;
                     -webkit-background-clip: text;
                     margin-right: 10px;
@@ -171,6 +198,22 @@ h4 {
 
 /* 4 페이지. 포트폴리오 */
 .port {}
+    ::-webkit-scrollbar {
+        height: 10px; /* 가로 스크롤 바의 높이 */
+    }
+
+    ::-webkit-scrollbar-track {
+        height: 1px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background-color: #fff; /* 가로 스크롤 바의 색상 */
+        height: 4px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #fff; /* 가로 스크롤 바에 마우스를 올렸을 때의 색상 */
+    }
     .port .portTop {
         display: flex;
         justify-content: space-between;
@@ -183,10 +226,11 @@ h4 {
     .port article ul {
         overflow-x: auto;
         overflow-y: hidden;
-        width: auto;
+        width: 100%;
         padding: 25px 0;
         border-top: 1px solid #fff;
         border-bottom: 1px solid #fff;
+        text-wrap: nowrap;
     }
         .port article ul li {
             position: relative;
@@ -197,6 +241,7 @@ h4 {
             vertical-align: top;
             cursor: pointer;
             margin-right: 30px;
+            text-wrap: wrap;
         }
             .port article ul li {
                 width: 30vw;
