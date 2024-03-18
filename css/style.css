@@ -175,9 +175,9 @@ h4 {
         }
         .career article ul.show {display: block;}
             .career article ul li {
-                font-size: var(--font-size-px040);
+                font-size: var(--font-size-px030);
                 font-weight: 300;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 color: grey;
             }
                 .career article ul li b {
